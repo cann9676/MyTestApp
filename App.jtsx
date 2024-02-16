@@ -1,0 +1,30 @@
+import React from 'react';
+import { 
+  GluestackUIProvider, 
+  Box,
+  ButtonText,
+  Text } from '@gluestack-ui/themed';
+import { config } from '@gluestack-ui/config';
+import { useState } from 'react';
+
+export default function App() {
+
+return (
+  <GluestackUIProvider colorMode={theme} config={config}>
+    <Box 
+      width="100%" 
+      justifyContent="center" 
+      alignContent="center"
+      sx={{
+        _dark: {
+          bg: '#000000',
+        },
+        _light: {
+          bg: '#fffff',
+        },
+      }}>
+       
+    </Box>
+  </GluestackUIProvider>
+  );
+}
